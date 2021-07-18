@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<title> Black Friday</title>
+</head>
+<body>
+	<ul class="nav-desktop">
+			<li><span></span><a href="#inicio">Início</a></li>
+			<li><span></span><a href="#produtos">Produtos</a></li>
+			<li><span></span><a href="#eventoBlackfriday">Evanto Black friday</a></li>
+			<li><span></span><a href="#contato">Contato</a></li>
+	</ul>
+	<section class="header-master">
+		<header>
+			<div class="container">
+				<div class="Esses e outros produtos em promoção e outros produtos em promoção"></div><!--logo-->
+				<nav class="desktop">
+					<ul>
+						<li class="selected"><span></span><a href="#inicio">Início</a></li>
+						<li><span></span><a href="#Produtos">Produtos </a></li>
+						<li><span></span><a href="#eventoBlackfriday">Evento Black friday </a></li>
+						<li><span></span><a href="#contato">Contato</a></li>
+					</ul>
+				</nav>
+				<nav class="mobile">
+					<h3><i class="fa fa-bars"></i></h3>
+				</nav>
+				<div class="telefone-header">
+					<span>(99) 9999-9999</span>
+				</div><!--telefone-->
+				<div class="clear"></div><!--clear-->
+			</div><!--container-->
+		</header>
+		<div id="inicio" class="content-header">
+				<div class="container">
+					
+					<div class="one">
+						<h1> Black friday</h1>
+						
+						<p>Esses e outros produtos em promoção. <b> Digite seu Email</b> para receber ofertas impertiveis. </p>
+						<form id="form">
+							<input  placeholder="*Digite seu Email"type="email" id="email" name="email" />
+							<input  type="submit" name="acao" value="Quero saber mais!" />
+						</form>
+						<span></span>
+					</div><!--one-->
+					<div class="two">
+						<img src="images/etapas/download (4).jpeg" />
+						<img src="images/etapas/download (7).jpeg" />
+						<img src="images/etapas/MXTQ2_AV1.jpeg" />
+						<img src="images/etapas/MXU82_AV1.jpeg" />
+						<div class="clear"></div>
+					</div><!--two-->
+					<div class="clear"></div>
+				</div><!--container-->
+		</div><!--content-header-->
+	</section><!--header-master-->
+	<section id="Produtos" class="produtos">
+		<div class="container">
+			<div class="produtos-single">
+				<img src="images/tvs/TV_01.jpeg" />
+				<h2> Tv smart 4k </h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed consequat tortor. Praesent sodales lacinia ipsum.</p>
+				<input  type="submit" name="acao" value="Saiba mais!" />
+			</div>
+			<div class="produtos-single">
+				<img src="images/tvs/TV_02.jpeg" />
+				<h2>Tv 32 polegadas</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed consequat tortor. Praesent sodales lacinia ipsum.</p>
+				<input  type="submit" name="acao" value="Saiba  mais!" />
+
+			</div>
+			<div class="produtos-single">
+				<img src="images/tvs/TV_03.jpeg" />
+				<h2> Smart Tv 50 Polegadas<b></b></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed consequat tortor. Prde
+			    	deaesent sodales lacinia ipsum.</p>
+					<input  type="submit" name="acao" value="Saiba mais!" />
+			<!--end-->		
+	    </div><!--container-->
+ 	</section><!--diferenciais-->
+
+	<section id="eventoBlackfriday" class="sobre">
+		<div class="container">
+			<div class="sobre-container">
+				<img src="images/round_images/black-friday.png" />
+			</div><!--sobre1-->
+			<div id="eventoBlackfriday" class="sobre-container padsobre">
+				<h2>Black Friday 2021</h2>
+				<p>PROMETE GRANDES NOVIDADES.</p>
+				<h2><b>Conheça o que é: </b></h2>
+				<p>A Black Friday é um dia super especial nos Estados Unidos, em que os lojistas realizam uma série de promoções para atrair mais consumidores. Ela normalmente ocorre um dia após o Thanksgiving Day (Dia de Ação de Graças). Esta data marca o início das compras de Natal!</p>
+			</div>
+			<div class="clear"></div>
+		</div><!--container-->
+	</section>
+	<section class="depoimento">
+		<div class="container">
+			<h2>Nós já estamos ansiosos para aquele descontão! Então fica ligado, neste ano a #BlackFriday acontece no dia 26 de novembro.</h2>
+			<p></p>
+		</div>
+	</section>
+	<section id="contato" class="contato">
+		<div class="container">
+			<h2>Entre em contato</h2>
+			<p>Telefone: (99) 9999-9999
+			<br />
+			Email: contato@.com.br
+			<br />
+			Endereço:
+			/ - Curitiba/PR</p>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<p> copyright © 2021  Vinicius de avilla - Todos os direitos reservados  </p>
+		</div>
+	</footer>
+
+	<script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+    	$('nav.desktop a').hover(function(){
+    		$('nav li').removeClass('selected');
+    		$(this).parent().addClass('selected');
+    	})
+    	$('nav.mobile h3').click(function(){
+    		$('ul.nav-desktop').slideToggle();
+    	})
+</script>
+</body>
+</html>
